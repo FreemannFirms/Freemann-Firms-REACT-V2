@@ -1,0 +1,34 @@
+:root {
+    --white: #fCFCFC;
+    --cool: #f7f7f7;
+    --primary-color: #a503a8;
+    --secondary-color: #680097;
+    --tertiary-color: #d600b1;
+    --extra--effect: #d3b703;
+    --black: #000;
+}
+
+/* NAVBAR */
+nav a.active{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* HOMEPAGE */
+/* HERO SECTION*/
+.hero-image{
+    background-image: linear-gradient(rgba(243, 13, 243, 0.212), rgba(236, 16, 225, 0.281)),url('../src/assets/Images/banner.jpg');
+    background-size: cover;
+}
+
+/* SERVICES SECTION */
+.services{
+    box-shadow: inset 5px 5px 5px rgba(172, 168, 171, 0.616), 
+                inset -5px -5px 15px rgba(138, 131, 137, 0.616), 
+                5px 5px 5px rgba(236, 9, 236, 0.863), 
+                -5px -5px 15px rgba(233, 5, 233, 0.795);
+}
+.services:hover{
+    transform: translateX(0.6rem);
+    transition: ease-in-out 0.5s;
+}
