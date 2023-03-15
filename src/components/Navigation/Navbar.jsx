@@ -43,9 +43,9 @@ const Navbar = () => {
                         <div className="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:-mx-2 lg:flex-row lg:items-center">
                             <NavLink to="/" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-grao-200" >Home</NavLink>
                             <NavLink to="/academy" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Academy</NavLink>
-                            <NavLink to="/invest"  className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Invest</NavLink>
-                            <NavLink to="/trade" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Trade</NavLink>
-                            <NavLink to="/marketplace" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Markeplace</NavLink>
+                            <NavLink to="/comingsoon"  className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Invest</NavLink>
+                            <NavLink to="/comingsoon" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Trade</NavLink>
+                            <NavLink to="/comingsoon" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Markeplace</NavLink>
                         </div>
 
                         <div className="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2 items-center">

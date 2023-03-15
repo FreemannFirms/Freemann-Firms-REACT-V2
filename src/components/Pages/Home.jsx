@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
 
+
 //COMPONENTS//
 import Layout from "../layout/Layout"
 import HomepageAbout from "../PageSections/HomepageAbout"
@@ -15,16 +16,16 @@ const HomePage = () => {
 
     return (
         <Layout>
-            <HomepageHero onClick={() => serviceRef.current.scrollIntoView({ behavior: 'smooth' })} />
-            <div ref={serviceRef}>
-                <HomepageService onClick={() => moreRef.current.scrollIntoView({ behavior: 'smooth' })} />
-            </div>
-            <HomepageAbout />
-            <HomepagePro />
-            <div ref={moreRef}>
-                <HomepageMore />
-            </div>
-        </Layout>
+                <HomepageHero onClick={() => serviceRef.current.scrollIntoView({ behavior: 'smooth' })} />
+                <div ref={serviceRef}>
+                    <HomepageService onClick={() => moreRef.current.scrollIntoView({ behavior: 'smooth' })} />
+                </div>
+                <HomepageAbout />
+                <HomepagePro />
+                <div ref={moreRef}>
+                    <HomepageMore />
+                </div>
+            </Layout>
     )
 }
 

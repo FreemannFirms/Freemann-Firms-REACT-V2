@@ -32,3 +32,17 @@ nav a.active{
     transform: translateX(0.6rem);
     transition: ease-in-out 0.5s;
 }
+
+/* COMINGSOON SECTION */
+.Cmshero-image{
+    background-image: linear-gradient(rgba(243, 13, 243, 0.212), rgba(236, 16, 225, 0.281)),url('../src/assets/Images/cms.jpg');
+    background-size: cover;
+}
+
+@media screen and (min-width: 1000px) {
+    /* SERVICES SECTION */
+    .services:hover{
+        transform: translateY(-0.6rem);
+        transition: ease-in-out 0.5s;
+    }
+}

@@ -1,11 +1,31 @@
 import React from 'react'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 //COMPONENTS//
 import Button from '../Reusable/Button'
 
+const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 }
+  };
+
 const HomepageHero = (props) => {
+
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+  
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } else {
+        control.start("hidden");
+      }
+    }, [control, inView]);
+
     return (
-        <div className="hero">
+        <motion.div className="hero" ref={ref} variants={boxVariant} initial='hidden' animate={control}>
             <div className="hero-image w-full bg-center bg-cover h-[38rem]">
                 <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
                     <div className="text-center">
@@ -17,7 +37,7 @@ const HomepageHero = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
