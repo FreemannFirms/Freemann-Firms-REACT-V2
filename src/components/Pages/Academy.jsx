@@ -8,6 +8,8 @@ import AcademyCourses from "../PageSections/AcademyCourses"
 import Academyhero from "../PageSections/Academyhero"
 import AcademyLearn from "../PageSections/AcademyLearn"
 
+
+
 const Academy = () => {
     const courseRef = useRef()
     return (

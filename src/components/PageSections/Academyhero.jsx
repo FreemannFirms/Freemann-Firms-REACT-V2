@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 //IMAGES//
 import img from '../../assets/Images/academy.jpg'
@@ -7,10 +10,27 @@ import img from '../../assets/Images/academy.jpg'
 //COMPONENTS//
 import Button from '../Reusable/Button'
 
+const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 }
+};
+
 
 const Academyhero = (props) => {
-  return (
-    <section className="bg-white dark:bg-gray-900">
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView]);
+
+    return (
+        <motion.div ref={ref} variants={boxVariant} initial='hidden' animate={control}>
+            <section className="bg-white dark:bg-gray-900">
                 <div className="container flex flex-col p-2 md:p-6 mx-auto lg:py-16 lg:flex-row lg:items-center">
                     <div className="w-full lg:w-1/2 px-1 md:px-4 ">
                         <div className="lg:max-w p-2 text-center">
@@ -34,7 +54,8 @@ const Academyhero = (props) => {
                     </div>
                 </div>
             </section >
-  )
+        </motion.div>
+    )
 }
 
 export default Academyhero
