@@ -12,8 +12,8 @@ const ComponentVariant = {
 
 const Contact = () => {
 
-    const fade = useAnimation()
     const { ref, inView } = useInView()
+    const fade = useAnimation()
 
     useEffect(() => {
         if (inView) {
@@ -25,7 +25,7 @@ const Contact = () => {
 
 
     return (
-        <motion.div animate={fade} variant={ComponentVariant} initial='hidden' ref={ref}>
+        <motion.div ref={ref} animate={fade} variants={ComponentVariant} initial='hidden'>
             <section className="bg-white dark:bg-gray-900">
                 <div className="container grid gap-8 px-6 py-12 mx-auto lg:grid-cols-3">
                     <div>
