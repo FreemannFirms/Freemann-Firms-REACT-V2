@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
@@ -16,7 +16,7 @@ const boxVariant = {
     hidden: { opacity: 0, scale: 0 }
 }
 
-const AcademyCourses = () => {
+const AllCourses = () => {
     const navigate = useNavigate()
     const control = useAnimation();
     const { ref, inView } = useInView();
@@ -36,8 +36,8 @@ const AcademyCourses = () => {
         <motion.div ref={ref} variants={boxVariant} initial='hidden' animate={control}>
             <section className="bg-cool dark:bg-gray-900 mt-5">
                 <div className="container px-6 py-10 mx-auto text-center">
-                    <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"><span className="text-primaryColor">Featured Courses</span></h1>
-                    <p>Below are some of our featured courses</p>
+                    <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"><span className="text-primaryColor">All available Courses</span></h1>
+                    <p>Below are some of our available courses</p>
                     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3 mb-8 p-2 ">
                         <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
                             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
@@ -63,9 +63,9 @@ const AcademyCourses = () => {
                                 <p>$250</p>
                             </div>
 
-                            <Link to='/courses/forex' className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                            <Button onClick={() => navigate('forex')} className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
                                 <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                            </Link>
+                            </Button>
                         </div>
 
                         <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
@@ -92,20 +92,20 @@ const AcademyCourses = () => {
                                 <p>$100</p>
                             </div>
 
-                            <Link to='/courses/crypto' className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                            <Button onClick={() => navigate('Crypto')} className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
                                 <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                            </Link>
+                            </Button>
                         </div>
                     </div>
-                    <Button >
+                    {/* <Button >
                         <NavLink to="/courses" >
                             See More
                         </NavLink>
-                    </Button>
+                    </Button> */}
                 </div>
             </section>
         </motion.div>
     )
 }
 
-export default AcademyCourses
+export default AllCourses

@@ -20,9 +20,9 @@ const Navbar = () => {
                 <div className="lg:flex lg:items-center bg-white">
                     <div className="flex items-center justify-between lg:ml-9">
                         <div className="flex items-center justify-between p-1 w-full text-base">
-                            <a href="#" className="">
+                            <NavLink to="/" className="">
                                 <img className="w-auto h-10 sm:h-7" src={img} alt="" />
-                            </a>
+                            </NavLink>
                             <h1 className="hidden md:block p-1 text-primaryColor uppercase font-extrabold " >
                                 Freemann Firms
                             </h1>
@@ -50,13 +50,13 @@ const Navbar = () => {
 
                         <div className="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2 items-center">
                             <div className="flex items-center mt-2 lg:mt-0">
-                                <a href="#" className="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-primaryColor dark:hover:text-gray-300" aria-label="Reddit">
+                                <a href="https://wa.link/yz70e7" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-primaryColor dark:hover:text-gray-300" aria-label="Reddit">
                                     <BsWhatsapp />
                                 </a>
-                                <a href="#" className="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-primaryColor dark:hover:text-gray-300" aria-label="Reddit">
+                                <a href="https://www.instagram.com/freemann_firms" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-primaryColor dark:hover:text-gray-300" aria-label="Reddit">
                                     <FiInstagram />
                                 </a>
-                                <a href="#" className="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-primaryColor dark:hover:text-gray-300" aria-label="Reddit">
+                                <a href="https://twitter.com/FreemannFirms" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-primaryColor dark:hover:text-gray-300" aria-label="Reddit">
                                     <BsTwitter />
                                 </a>
                             </div>

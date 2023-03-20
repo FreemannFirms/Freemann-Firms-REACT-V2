@@ -2,10 +2,12 @@ import * as React from 'react'
 import { useState } from 'react';
 import { Tabs, Tab, Box, Typography, ThemeProvider, createTheme } from '@mui/material';
 
+
 //COMPONENTS//
-import ForexAbout from './ForexAbout';
-import ForexContent from './ForexContent';
-import ForexReviews from './ForexReviews';
+import CryptoAbout from './CryptoAbout';
+import CryptoContent from './CryptoContent';
+import CryptoReviews from './CryptoReviews';
+
 
 const sxStyle = {
     backgroundColor: '#fafafa',
@@ -22,16 +24,17 @@ const THEME = createTheme({
 });
 
 
-
-const ForexTabs = () => {
+const CryptoTabs = () => {
     const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
-    return (
-        <ThemeProvider theme={THEME}>
+
+
+  return (
+    <ThemeProvider theme={THEME}>
             <div className="container px-6 py-10 mx-auto">
                 <Box sx={sxStyle}>
                     <Tabs
@@ -51,21 +54,21 @@ const ForexTabs = () => {
                         {value === 0 && (
                             <Box>
                                 <Typography>
-                                    <ForexAbout />
+                                    <CryptoAbout />
                                 </Typography>
                             </Box>
                         )}
                         {value === 1 && (
                             <Box>
                                 <Typography>
-                                    <ForexContent />
+                                    <CryptoContent />
                                 </Typography>
                             </Box>
                         )}
                         {value === 2 && (
                             <Box>
                                 <Typography>
-                                    <ForexReviews />
+                                    <CryptoReviews />
                                 </Typography>
                             </Box>
                         )}
@@ -73,7 +76,8 @@ const ForexTabs = () => {
                 </Box>
             </div>
         </ThemeProvider>
-    )
+  )
 }
 
-export default ForexTabs
+
+export default CryptoTabs

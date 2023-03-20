@@ -8,6 +8,7 @@ import Courses from './components/Pages/Courses'
 import About from './components/Pages/About'
 import ComingSoon from './components/Pages/ComingSoon'
 import Forex from './components/Pages/Forex'
+import Crypto from './components/Pages/Crypto'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='courses' element={<Courses />} />
       <Route path='about' element={<About />} />
       <Route path='courses/forex' element={<Forex />} />
+      <Route path='courses/crypto' element={<Crypto />} />
     </Routes>
   )
 }

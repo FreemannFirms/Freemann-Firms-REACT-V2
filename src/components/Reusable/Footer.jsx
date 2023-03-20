@@ -21,13 +21,13 @@ const Footer = () => {
             </div>
             <div>
                 <div className="grid grid-flow-col gap-4">
-                    <a href="#" className="mx-2 text-white-900 transition-colors duration-300 transform dark:text-gray-300 hover:text-secondaryColor dark:hover:text-gray-300" aria-label="Reddit">
+                    <a href="https://wa.link/yz70e7" target='_blank' className="mx-2 text-white-900 transition-colors duration-300 transform dark:text-gray-300 hover:text-secondaryColor dark:hover:text-gray-300" aria-label="Reddit">
                         <BsWhatsapp className="w-8 h-8"/>
                     </a>
-                    <a href="#" className="mx-2 text-white-900 transition-colors duration-300 transform dark:text-gray-300 hover:text-secondaryColor dark:hover:text-gray-300" aria-label="Reddit">
+                    <a href="https://www.instagram.com/freemann_firms" target='_blank' className="mx-2 text-white-900 transition-colors duration-300 transform dark:text-gray-300 hover:text-secondaryColor dark:hover:text-gray-300" aria-label="Reddit">
                         <FiInstagram className="w-8 h-8"/>
                     </a>
-                    <a href="#" className="mx-2 text-white-900 transition-colors duration-300 transform dark:text-gray-300 hover:text-secondaryColor dark:hover:text-gray-300" aria-label="Reddit">
+                    <a href="https://twitter.com/FreemannFirms" target='_blank' className="mx-2 text-white-900 transition-colors duration-300 transform dark:text-gray-300 hover:text-secondaryColor dark:hover:text-gray-300" aria-label="Reddit">
                         <BsTwitter className="w-8 h-8"/>
                     </a>
                 </div>

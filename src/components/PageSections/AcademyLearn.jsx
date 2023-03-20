@@ -46,7 +46,7 @@ const AcademyLearn = () => {
                     </div>
 
                     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
-                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool">
+                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
                                 <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
                                     <BsPersonCheck />
@@ -62,7 +62,7 @@ const AcademyLearn = () => {
                             </div>
                         </div>
 
-                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool">
+                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
                                 <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
                                     <GiOpenBook />
@@ -78,7 +78,7 @@ const AcademyLearn = () => {
                             </div>
                         </div>
 
-                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool">
+                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
                                 <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
                                     <IoMdChatboxes />
@@ -94,7 +94,7 @@ const AcademyLearn = () => {
                             </div>
                         </div>
 
-                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool">
+                        <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
                                 <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
                                     <BiWorld />
