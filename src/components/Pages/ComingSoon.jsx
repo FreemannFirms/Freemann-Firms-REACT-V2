@@ -11,7 +11,6 @@ import img from '../../assets/Images/FF.png'
 
 //COMPONENTS
 import Button from '../Reusable/Button';
-import ComingsoonNavbar from '../Navigation/ComingsoonNavbar'
 
 const ComingSoon = () => {
     const [open, setOpen] = useState(false)
