@@ -6,9 +6,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 //IMAGES
 import courses from '../../assets/Images/courses.jpg'
 import career from '../../assets/Images/career.jpg'
-import tine from '../../assets/images/tine.png';
-import phillip from '../../assets/images/phillip.png';
-import maryann from '../../assets/images/maryann.png';
+import tine from '../../assets/Images/tine.png';
+import phillip from '../../assets/Images/phillip.png';
+import maryann from '../../assets/Images/maryann.png';
 
 //ICONS
 import { FcCandleSticks } from "react-icons/fc";
