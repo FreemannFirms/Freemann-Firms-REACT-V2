@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 
 //COMPONENTS
-import Layout from "../layout/Layout"
+import Layout from "../Layout/Layout"
 import Button from "../Reusable/Button";
 
 //ICONS
