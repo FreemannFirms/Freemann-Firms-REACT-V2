@@ -34,10 +34,10 @@ nav a.active{
 }
 
 /* COMINGSOON SECTION */
-.Cmshero-image{
-    background-image: linear-gradient(rgba(243, 13, 243, 0.212), rgba(236, 16, 225, 0.281)),url('../src/assets/Images/cms.jpg');
+/* .Cmshero-image{
+    background-image: linear-gradient(rgba(30, 2, 66, 0.932), rgba(100, 4, 95, 0.281)),url('../src/assets/Images/cms.jpg');
     background-size: cover;
-}
+} */
 
 @media screen and (min-width: 1000px) {
     /* SERVICES SECTION */

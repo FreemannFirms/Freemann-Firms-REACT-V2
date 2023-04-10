@@ -16,8 +16,8 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<HomePage />} />
-      <Route path='academy' element={<Academy />} />
       <Route path='comingsoon' element={<ComingSoon />} />
+      <Route path='academy' element={<Academy />} />
       <Route path='courses' element={<Courses />} />
       <Route path='about' element={<About />} />
       <Route path='courses/forex' element={<Forex />} />

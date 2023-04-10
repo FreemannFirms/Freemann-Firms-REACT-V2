@@ -11,7 +11,6 @@ import avatar from '../../assets/Images/avatar.png'
 
 //COMPONENTS//
 import AcademyLayout from '../Layout/AcademyLayout'
-
 import CryptoTabs from '../PageSections/CryptoTabs'
 
 
