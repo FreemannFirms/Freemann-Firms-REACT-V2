@@ -148,7 +148,7 @@ const ForexTabs = () => {
                                             <li>5. Trading Psychology.</li>
                                         </ul>
                                         <Button>
-                                            <a href="https://checkout.ivorypay.io/checkout/1RtIkJxinudTeVyUQy71SiO9bhE6FFUMwryv" target='_blank' >
+                                            <a href="https://selar.co/kbsf" target='_blank' >
                                                 Enroll
                                             </a>
                                         </Button>

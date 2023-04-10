@@ -141,7 +141,7 @@ const CryptoTabs = () => {
                                             <li>3. The issues arising with Cryptocurrencies and how to avoid them.</li>
                                         </ul>
                                         <Button>
-                                            <a href="https://checkout.ivorypay.io/checkout/1RtIkJxinudTeVyUQy71SiO9bhE6FFUMwryv">
+                                            <a href="https://selar.co/rtrq" target='_blank'>
                                                 Enroll
                                             </a>
                                         </Button>
