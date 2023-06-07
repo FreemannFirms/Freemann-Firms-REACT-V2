@@ -23,21 +23,48 @@ nav a.active{
 
 /* SERVICES SECTION */
 .services{
-    box-shadow: inset 5px 5px 5px rgba(172, 168, 171, 0.616), 
-                inset -5px -5px 15px rgba(138, 131, 137, 0.616), 
-                5px 5px 5px rgba(236, 9, 236, 0.863), 
-                -5px -5px 15px rgba(233, 5, 233, 0.795);
+    box-shadow: inset 5px 5px 5px rgba(228, 224, 227, 0.616), 
+                inset -5px -5px 15px rgba(206, 203, 205, 0.616), 
+                5px 5px 5px rgba(235, 184, 235, 0.863), 
+                -5px -5px 15px rgba(224, 162, 224, 0.795);
 }
 .services:hover{
     transform: translateX(0.6rem);
     transition: ease-in-out 0.5s;
 }
 
-/* COMINGSOON SECTION */
-/* .Cmshero-image{
-    background-image: linear-gradient(rgba(30, 2, 66, 0.932), rgba(100, 4, 95, 0.281)),url('../src/assets/Images/cms.jpg');
-    background-size: cover;
-} */
+/* DROPDOWN MENU*/
+.services-submenu{
+    width: 10rem;
+    position: absolute;
+    top: 2rem;
+    list-style-type: none;
+    text-align: start;
+}
+
+.services-submenu.clicked{
+    display: none;
+}
+
+.services-submenu li{
+    background-color: #a503a8;
+    cursor: pointer;
+}
+
+.submenu-item{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #f7f7f7;
+    padding: 1rem;
+}
+
+.submenu-item:hover{
+    background-color: #98039b; 
+}
+
+
 
 @media screen and (min-width: 1000px) {
     /* SERVICES SECTION */

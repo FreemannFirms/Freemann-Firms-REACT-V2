@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from "react"
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
+import { navItems } from './NavItems';
+import Dropdown from './Dropdown';
 
 //IMAGE//
 import img from '../../assets/Images/FF.png'
@@ -13,6 +16,7 @@ import { FiInstagram } from 'react-icons/fi'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const { dropdown, setDropdown } = useState(true);
 
     return (
         <nav className="bg-white shadow dark:bg-gray-800">
@@ -40,12 +44,28 @@ const Navbar = () => {
                     </div>
 
                     <div className={`${open ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full '}` + "absolute inset-x-0 z-20 flex-1 px-6 lg:px-0 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-1 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-around w-full text-base"}>
-                        <div className="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:-mx-2 lg:flex-row lg:items-center">
-                            <NavLink to="/" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-grao-200" >Home</NavLink>
-                            <NavLink to="/academy" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Academy</NavLink>
-                            <NavLink to="/comingsoon"  className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Invest</NavLink>
-                            <NavLink to="/comingsoon" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Trade</NavLink>
-                            <NavLink to="/comingsoon" className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Markeplace</NavLink>
+                        <div>
+                            <ul className="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:-mx-2 lg:flex-row lg:items-center">
+                                {navItems.map((item) => {
+                                    if (item.title === "Academy") {
+                                        return (
+                                            <li key={item.id} className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">
+                                                <Link to={item.path}>
+                                                    {item.title}
+                                                </Link>
+                                                {dropdown && <Dropdown />}
+                                            </li>
+                                        );
+                                    }
+
+                                    return (
+                                        <li key={item.id} className="nav mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-grao-200">
+                                            <Link to={item.path}>{item.title}</Link>
+                                        </li>
+                                    );
+                                })}
+
+                            </ul>
                         </div>
 
                         <div className="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2 items-center">
