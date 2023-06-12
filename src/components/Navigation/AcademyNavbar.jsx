@@ -16,10 +16,10 @@ const AcademyNavbar = () => {
 
 
     return (
-        <nav className="bg-white shadow dark:bg-gray-800">
+        <nav className="bg-white shadow dark:bg-gray-900">
             <div className="container px-2 py-4 mx-auto">
-                <div className="lg:flex lg:items-center bg-white text-base">
-                    <div className="flex items-center justify-between lg:ml-9">
+                <div className="lg:flex lg:items-center bg-white text-base dark:bg-gray-900">
+                    <div className="flex items-center justify-between lg:ml-9 dark:bg-gray-900">
                         <div className="flex items-center justify-between p-1">
                             <NavLink to="/" className="">
                                 <img className="w-auto h-10 sm:h-7" src={img} alt="" />
@@ -40,9 +40,9 @@ const AcademyNavbar = () => {
                         </div>
                     </div>
 
-                    <div className={`${open ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full '}` + "absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-1 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-around"}>
-                        <div className="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
-                            <NavLink to="/" className="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-grao-200" >Home</NavLink>
+                    <div className={`${open ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full '}` + "absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-900 lg:mt-0 lg:p-1 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-around"}>
+                        <div className="flex flex-col text-gray-600 capitalize dark:text-white lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
+                            <NavLink to="/" className="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200" >Home</NavLink>
                             <NavLink to="/academy" className="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200" >Academy</NavLink>
                             <NavLink to="/courses" className="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">Courses</NavLink>
                             <NavLink to="/about" className="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-primaryColor dark:hover:text-gray-200">About</NavLink>

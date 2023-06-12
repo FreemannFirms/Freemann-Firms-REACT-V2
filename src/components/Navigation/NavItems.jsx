@@ -14,19 +14,19 @@ export const navItems = [
     {
         id:3,
         title: "Earn",
-        path: "./invest",
+        path: "./Comingsoon",
         cName: "nav-item",
     },
     {
         id:4,
         title: "Trade",
-        path: "./trade",
+        path: "./Comingsoon",
         cName: "nav-item",
     },
     {
         id:5,
         title: "MarketPlace",
-        path: "./trade",
+        path: "./Comingsoon",
         cName: "nav-item",
     }
 ];

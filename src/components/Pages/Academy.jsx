@@ -72,13 +72,13 @@ const Academy = () => {
             </div>
 
             <div ref={courseRef}>
-                <section className="bg-cool dark:bg-gray-900 mt-5">
+                <section className="bg-cool dark:bg-gray-900">
                     <div className="container px-6 py-10 mx-auto text-center">
                         <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"><span className="text-primaryColor">Featured Courses</span></h1>
-                        <p>Below are some of our featured courses</p>
+                        <p className='dark:text-white' >Below are some of our featured courses</p>
                         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3 mb-8 p-2 ">
                             <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
-                                <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                                <span className="inline-block p-3 text-blue-500 bg-primaryColor rounded-full dark:text-white dark:bg-primaryColor">
                                     <FcCandleSticks className="w-6 h-6" />
                                 </span>
 
@@ -97,17 +97,20 @@ const Academy = () => {
                                 </p>
 
                                 <div className="flex flex-row justify-between w-full border-2 rounded p-2">
-                                    <p className="">Advanced</p>
-                                    <p>$250</p>
+                                    <p className=" dark:text-white">Advanced</p>
+                                    <p className=" dark:text-white">$250</p>
                                 </div>
 
-                                <Link to='/courses/forex' className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                                <Link to='/courses/forex' className="flex items-center -mx-1 text-lg text-primaryColor capitalize transition-colors duration-300 transform dark:text-primaryColor hover:underline hover:text-secondaryColor dark:hover:text-secondaryColor">
+                                    <Button>
+                                        ENROLL
+                                    </Button>
                                 </Link>
+
                             </div>
 
                             <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
-                                <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                                <span className="inline-block p-3 text-white bg-primaryColor rounded-full dark:text-white dark:bg-primaryColor">
                                     <FcBullish />
                                 </span>
 
@@ -126,18 +129,20 @@ const Academy = () => {
                                 </p>
 
                                 <div className="flex flex-row justify-between w-full border-2 rounded p-2">
-                                    <p>Intermediate</p>
-                                    <p>$100</p>
+                                    <p className=" dark:text-white">Intermediate</p>
+                                    <p className=" dark:text-white">$100</p>
                                 </div>
 
                                 <Link to='/courses/crypto' className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                                    <Button>
+                                        ENROLL
+                                    </Button>
                                 </Link>
                             </div>
                         </div>
                         <Button >
                             <NavLink to="/courses" >
-                                See More
+                                See All Courses
                             </NavLink>
                         </Button>
                     </div>
@@ -157,9 +162,9 @@ const Academy = () => {
                         </div>
 
                         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
-                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 dark:bg-gray-900 bg-cool shadow-lg">
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                                         <BsPersonCheck />
                                     </span>
 
@@ -173,9 +178,9 @@ const Academy = () => {
                                 </div>
                             </div>
 
-                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 dark:bg-gray-900 bg-cool shadow-lg">
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                                         <GiOpenBook />
                                     </span>
 
@@ -189,9 +194,9 @@ const Academy = () => {
                                 </div>
                             </div>
 
-                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 dark:bg-gray-900 bg-cool shadow-lg">
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                                         <IoMdChatboxes />
                                     </span>
 
@@ -205,9 +210,9 @@ const Academy = () => {
                                 </div>
                             </div>
 
-                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                            <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 dark:bg-gray-900 bg-cool shadow-lg">
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                                         <BiWorld />
                                     </span>
 

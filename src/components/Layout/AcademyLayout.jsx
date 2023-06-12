@@ -6,9 +6,9 @@ import Footer from '../Reusable/Footer'
 
 const AcademyLayout = (props) => {
     return (
-        <div>
+        <div className='dark' >
             <AcademyNavbar />
-            {props.children}
+                {props.children}
             <Footer />
         </div>
     )
