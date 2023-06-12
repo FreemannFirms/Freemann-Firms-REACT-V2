@@ -4,9 +4,9 @@ import Footer from '../Reusable/Footer'
 
 const Layout = (props) => {
     return (
-        <div>
+        <div className='dark'>
             <Navbar />
-            {props.children}
+                {props.children}
             <Footer/>
         </div>
     )

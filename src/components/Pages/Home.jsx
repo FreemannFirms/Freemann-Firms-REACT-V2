@@ -41,12 +41,12 @@ const HomePage = () => {
             </div>
 
             <div>
-                <section ref={serviceRef} className="bg-cool dark:bg-gray-900 mt-5">
+                <section ref={serviceRef} className="bg-cool dark:bg-gray-900">
                     <div>
-                        <div className="py-6 px-12 border border-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                        <div className="py-6 px-12 dark:bg-gray-900 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
-                                <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-                                    <HiAcademicCap className="" />
+                                <span className="bg-primaryColor text-white inline-block p-2 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
+                                    <HiAcademicCap/>
                                 </span>
 
                                 <div className="mt-4 md:mx-4 md:mt-0">
@@ -64,9 +64,9 @@ const HomePage = () => {
                             </div>
                         </div>
 
-                        <div className="py-6 px-12 border border-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                        <div className="py-6 px-12 dark:bg-gray-900 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
-                                <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                                     <AiOutlineLineChart />
                                 </span>
 
@@ -76,14 +76,14 @@ const HomePage = () => {
                             </div>
                             <div className="lg:px-16 py-2">
                                 <p className="text-gray-500 dark:text-gray-300 py-2">
-                                    You Invest, we Trade the financials markets for you maximizing profits and minimizing lossess at all cost and give you returns on your Investment based on the performance of your preferred fund manager<span className="text-primaryColor">(COMING SOON)</span>.
+                                    You Invest, we Trade the financials markets for you maximizing profits and minimizing lossess at all cost and give you returns on your Investment based on the performance of your preferred fund manager <span className="text-primaryColor">(SOON)</span>.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="py-6 px-12 border border-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                        <div className="py-6 px-12 dark:bg-gray-900 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
-                                <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                                     <BsCurrencyBitcoin />
                                 </span>
 
@@ -93,14 +93,14 @@ const HomePage = () => {
                             </div>
                             <div className="lg:px-16 py-2">
                                 <p className="text-gray-500 dark:text-gray-300 py-2">
-                                    Send, receive and trade your digital assets with ease! With our secure platform, your digital assets are safe<span className="text-primaryColor">(COMING SOON)</span>.
+                                    Send, receive and trade your digital assets with ease! With our secure platform, your digital assets are safe <span className="text-primaryColor">(SOON)</span>.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="py-6 px-12 border border-gray-200 dark:border-gray-700 bg-cool shadow-lg">
+                        <div className="py-6 px-12 dark:bg-gray-900 bg-cool shadow-lg">
                             <div className="md:flex md:items-start md:-mx-4">
-                                <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                                     <BsShopWindow />
                                 </span>
 
@@ -110,7 +110,7 @@ const HomePage = () => {
                             </div>
                             <div className="lg:px-16 py-2">
                                 <p className="text-gray-500 dark:text-gray-300 py-2">
-                                    Connect with businesses and brands in real time. Pay for products, goods or services. Everything you need in one place<span className="text-primaryColor">(COMING SOON)</span>.
+                                    Connect with businesses and brands in real time. Pay for products, goods or services. Everything you need in one place <span className="text-primaryColor">(SOON)</span>.
                                 </p>
                             </div>
                         </div>
@@ -148,7 +148,7 @@ const HomePage = () => {
                                 <h1 className="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
                                     We are professionals
                                 </h1>
-                                <p className="text-base text-justify pt-4">We have professionals in all areas of the tech space, from Forex traders and Tutors, Web developers and designers to UIUX designers etc. All with years of experience bringing you the very best of services.</p>
+                                <p className="text-base text-justify pt-4 dark:text-white">We have professionals in all areas of the tech space, from Forex traders and Tutors, Web developers and designers to UIUX designers etc. All with years of experience bringing you the very best of services.</p>
                                 <div className="mt-8 space-y-5">
                                     <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -180,50 +180,50 @@ const HomePage = () => {
                 <section className="flex flex-col bg-white dark:bg-gray-900 md:text-center p-4 md:items-center">
                     <div className="container p-2 text-center">
                         <h1 className="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">Our services</h1>
-                        <p>Freemann Firms offers the following services</p>
+                        <p className="dark:text-white">Freemann Firms offers the following services</p>
                     </div>
-                    <div className="container ">
-                        <ul className="w-full menu menu-compact bg-base-100 md:px-10 md:py-4 rounded-box">
+                    <div className="container">
+                        <ul className="w-full menu menu-compact bg-base-100 md:px-10 md:py-4 rounded-box  dark:bg-gray-900">
                             <li className="md:p-2">
                                 <div className="flex justify-between border p-4">
-                                    <p>Digital Asset Exchange</p>
-                                    <a href="https://wa.link/15bxuc" target="_blank"><BsPlusLg /></a>
+                                    <p className="dark:text-white">Digital Asset Exchange</p>
+                                    <a href="https://wa.link/15bxuc" target="_blank" className="dark:text-white"><BsPlusLg /></a>
                                 </div>
                             </li>
                             <li className="md:p-2">
                                 <div className="flex justify-between border p-4">
-                                    <p>Forex Trading Education</p>
-                                    <a href="https://wa.link/jhphun" target="_blank" ><BsPlusLg /></a>
+                                    <p className="dark:text-white">Forex Trading Education</p>
+                                    <a href="https://wa.link/jhphun" target="_blank"className="dark:text-white" ><BsPlusLg /></a>
                                 </div>
                             </li>
                             <li className="md:p-2">
                                 <div className="flex justify-between border p-4">
-                                    <p>Web design and development</p>
-                                    <a href="https://wa.link/ksvxuk" target="_blank" ><BsPlusLg /></a>
+                                    <p className="dark:text-white">Web design and development</p>
+                                    <a href="https://wa.link/ksvxuk" target="_blank" className="dark:text-white"><BsPlusLg /></a>
                                 </div>
                             </li>
                             <li className="md:p-2">
                                 <div className="flex justify-between border p-4">
-                                    <p>UIUX design</p>
-                                    <a href="https://wa.link/qbe1np" target="_blank"><BsPlusLg /></a>
+                                    <p className="dark:text-white" >UIUX design</p>
+                                    <a href="https://wa.link/qbe1np" target="_blank" className="dark:text-white"><BsPlusLg /></a>
                                 </div>
                             </li>
                             <li className="md:p-2">
                                 <div className="flex justify-between border p-4">
-                                    <p>Graphics design</p>
-                                    <a href="https://wa.link/qbe1np" target="_blank" ><BsPlusLg /></a>
+                                    <p className="dark:text-white">Graphics design</p>
+                                    <a href="https://wa.link/qbe1np" target="_blank" className="dark:text-white"><BsPlusLg /></a>
                                 </div>
                             </li>
                             <li className="md:p-2">
                                 <div className="flex justify-between border p-4">
-                                    <p>Investment Services</p>
-                                    <NavLink to="/comingsoon"><BsPlusLg /></NavLink>
+                                    <p className="dark:text-white">Investment Services</p>
+                                    <NavLink to="/comingsoon" className="dark:text-white"><BsPlusLg /></NavLink>
                                 </div>
                             </li>
                             <li className="md:p-2">
                                 <div className="flex justify-between border p-4">
-                                    <p>Import and Export</p>
-                                    <a href="https://wa.link/kwz1of" target="_blank" ><BsPlusLg /></a>
+                                    <p className="dark:text-white">Import and Export</p>
+                                    <a href="https://wa.link/kwz1of" target="_blank" className="dark:text-white"><BsPlusLg /></a>
                                 </div>
                             </li>
                         </ul>
