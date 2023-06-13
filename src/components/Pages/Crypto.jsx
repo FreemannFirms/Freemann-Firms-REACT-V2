@@ -28,7 +28,7 @@ const Crypto = () => {
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
               <div className="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700 dark:bg-gray-900 bg-cool shadow-lg">
                 <div className="md:flex md:items-start md:-mx-4">
-                  <span className="inline-block p-2 text-primaryColor bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
+                  <span className="inline-block p-2 text-white bg-primaryColor rounded-xl md:mx-4 dark:text-white dark:bg-primaryColor">
                     <HiOutlineVideoCamera />
                   </span>
 

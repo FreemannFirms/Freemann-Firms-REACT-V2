@@ -77,7 +77,7 @@ const Academy = () => {
                         <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"><span className="text-primaryColor">Featured Courses</span></h1>
                         <p className='dark:text-white' >Below are some of our featured courses</p>
                         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3 mb-8 p-2 ">
-                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
+                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white border rounded-xl border-r-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-lg">
                                 <span className="inline-block p-3 text-blue-500 bg-primaryColor rounded-full dark:text-white dark:bg-primaryColor">
                                     <FcCandleSticks className="w-6 h-6" />
                                 </span>
@@ -101,7 +101,7 @@ const Academy = () => {
                                     <p className=" dark:text-white">$250</p>
                                 </div>
 
-                                <Link to='/courses/forex' className="flex items-center -mx-1 text-lg text-primaryColor capitalize transition-colors duration-300 transform dark:text-primaryColor hover:underline hover:text-secondaryColor dark:hover:text-secondaryColor">
+                                <Link to='/courses/forex' className="flex items-center -mx-1 text-lg text-primaryColor capitalize transition-colors duration-300 transform dark:text-primaryColor hover:text-secondaryColor dark:hover:text-secondaryColor">
                                     <Button>
                                         ENROLL
                                     </Button>
@@ -109,7 +109,7 @@ const Academy = () => {
 
                             </div>
 
-                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
+                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white border rounded-xl border-r-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-lg">
                                 <span className="inline-block p-3 text-white bg-primaryColor rounded-full dark:text-white dark:bg-primaryColor">
                                     <FcBullish />
                                 </span>
@@ -133,7 +133,7 @@ const Academy = () => {
                                     <p className=" dark:text-white">$100</p>
                                 </div>
 
-                                <Link to='/courses/crypto' className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <Link to='/courses/crypto' className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-500">
                                     <Button>
                                         ENROLL
                                     </Button>
