@@ -58,7 +58,7 @@ const HomePage = () => {
                                     Learn to Earn with 21st century skillsets that revolve in and around the web, and harness the limitless potential of the internet to create lifetime financial sustainability.
                                 </p>
 
-                                <NavLink to="/academy" className="flex items-center mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <NavLink to="/academy" className="flex items-center mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-500">
                                     <Button >SEE MORE</Button>
                                 </NavLink>
                             </div>

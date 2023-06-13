@@ -54,11 +54,11 @@ const Courses = () => {
 
             <div ref={courseRef}>
                 <section className="bg-cool dark:bg-gray-900">
-                    <div className="container px-6 py-10 mx-auto text-center">
+                    <div className="container px-6 py-10 mx-auto text-center ">
                         <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"><span className="text-primaryColor">All available Courses</span></h1>
                         <p className='dark:text-white'>Below are some of our available courses</p>
                         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3 mb-8 p-2 ">
-                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
+                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white border rounded-xl border-r-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-lg">
                                 <span className="inline-block p-3 text-white bg-primaryColor rounded-full dark:text-white dark:bg-primaryColor">
                                     <FcCandleSticks className="w-6 h-6" />
                                 </span>
@@ -87,7 +87,7 @@ const Courses = () => {
                                 </Button>
                             </div>
 
-                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white rounded-xl dark:bg-gray-800">
+                            <div className="services flex flex-col items-center p-6 space-y-3 text-center bg-white border rounded-xl border-r-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-lg">
                                 <span className="inline-block p-3 text-white bg-primaryColor rounded-full dark:text-white dark:bg-primaryColor">
                                     <FcBullish />
                                 </span>
