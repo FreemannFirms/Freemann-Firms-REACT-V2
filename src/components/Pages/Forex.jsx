@@ -23,7 +23,7 @@ const Forex = () => {
           <div className="container px-6 py-10 mx-auto">
             <div className="grid justify-between items-center gap-2">
               <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white mb-4 lg:mb-0">Forex & Crypto Trading MasterClass</h1>
-              <p className='dark: text-white'>Go from beginner to Master with the "Forex & crypto Trading masterclass". Learn how to properly analyze and Trade any financial markets which allows you to Earn passive or active Income.</p>
+              <p className='dark:text-white text-gray-800'>Go from beginner to Master with the "Forex & crypto Trading masterclass". Learn how to properly analyze and Trade any financial markets which allows you to Earn passive or active Income.</p>
             </div>
 
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">

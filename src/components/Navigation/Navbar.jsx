@@ -3,7 +3,7 @@ import { useState } from "react"
 import { Link, NavLink } from 'react-router-dom';
 
 import { navItems } from './NavItems';
-import Dropdown from './Dropdown';
+// import Dropdown from './Dropdown';
 
 //IMAGE//
 import img from '../../assets/Images/FF.png'
@@ -16,7 +16,7 @@ import { FiInstagram } from 'react-icons/fi'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const { dropdown, setDropdown } = useState(true);
+    // const { dropdown, setDropdown } = useState(true);
 
     return (
         <nav className="bg-white shadow dark:bg-gray-900">

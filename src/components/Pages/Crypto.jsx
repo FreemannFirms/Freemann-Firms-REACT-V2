@@ -22,7 +22,7 @@ const Crypto = () => {
           <div className="container px-6 py-10 mx-auto">
             <div className="grid justify-between items-center gap-2">
               <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white mb-4 lg:mb-0">The Complete Cryptocurrency Investment Course</h1>
-              <p className='dark: text-white'>The Cryptocurrency market is filled with opportunities but it is only available to those with proper knowledge on how the market works. This course teaches you all you need to know about the crypto markets and how to Invest properly for short or long term gains.</p>
+              <p className='dark:text-white text-gray-800'>The Cryptocurrency market is filled with opportunities but it is only available to those with proper knowledge on how the market works. This course teaches you all you need to know about the crypto markets and how to Invest properly for short or long term gains.</p>
             </div>
 
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
