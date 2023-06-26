@@ -14,8 +14,8 @@ import { BsPlusLg } from "react-icons/bs"
 
 
 //IMAGES
-import about from '../../assets/Images/about.jpg'
-import pro from '../../assets/Images/pro.jpg'
+import about from '../../assets/Images/about.jpg';
+import pro from '../../assets/Images/pro.jpg';
 
 
 
@@ -169,7 +169,7 @@ const HomePage = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center justify-center w-full h-96 lg:w-1/2 border">
+                        <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
                             <img className="sm:object-cover object-contain w-full h-full mx-auto lg:max-w-2xl" src={pro} alt="freemann firms" />
                         </div>
                     </div>
