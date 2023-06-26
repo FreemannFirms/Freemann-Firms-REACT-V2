@@ -14,8 +14,8 @@ import { BsPlusLg } from "react-icons/bs"
 
 
 //IMAGES
-import about from '../../assets/Images/about.jpg'
-import pro from '../../assets/Images/pro.jpg'
+import about from '../../assets/Images/about';
+import pro from '../../assets/Images/pro.jpg';
 
 
 
